@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32602.291
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{AD95B814-4974-486E-956B-2BB265FC4137}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{AD95B814-4974-486E-956B-2BB265FC4137}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{0DC275D8-E936-49D1-B23E-C52359051196}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{0DC275D8-E936-49D1-B23E-C52359051196}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{57756A09-AB6B-402B-A74D-4CF24727CF9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{57756A09-AB6B-402B-A74D-4CF24727CF9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "Entity\Entity.csproj", "{CF9765C4-B7E3-4CEB-924D-2B44229ECB62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entity\Entities.csproj", "{CF9765C4-B7E3-4CEB-924D-2B44229ECB62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMenuMVC", "OnlineMenuMVC\OnlineMenuMVC.csproj", "{B0852B57-A5EB-45AA-B9AA-BE8DAC09B26E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineMenuMVC", "OnlineMenuMVC\OnlineMenuMVC.csproj", "{B0852B57-A5EB-45AA-B9AA-BE8DAC09B26E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

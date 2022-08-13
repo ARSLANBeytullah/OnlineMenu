@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.Entity
+namespace Business.Abstract
 {
-    public interface IEntity 
+    public interface ICategoryService
     {
     }
 }
