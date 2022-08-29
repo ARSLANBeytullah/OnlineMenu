@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <Folder Include="Utilities\" />
-    <Folder Include="Service\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>

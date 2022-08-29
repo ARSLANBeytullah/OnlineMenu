@@ -10,11 +10,11 @@ namespace Core.Data.Abstract
 {
     public interface IGenericRepository<T> where T : class,IEntity,new()
     {
-        Task<T> GetAsync(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties); //var kullanici = repository.GetAsyync(k=>k.Id == 15);  predicate = filtre diyebiliriz.
-        Task<IList<T>> GetAllAsync(Expression<Func<T, bool>> predicate = null, params Expression<Func<T, object>>[] includeProperties);
-        Task AddAsync(T entity);
-        Task UpdateAsync(T entity);
-        Task DeleteAsync(T entity);
+        Task<IEnumerable<T>> GetAllAsync(Expression<Func<T, bool>> predicate = null, params Expression<Func<T, object>>[] includeProperties);
+        Task<T> GetByIdAsync(int id);
+        Task AddAysnc(T entity);
+        Task Update(T entity);
+        Task Delete(int id);
         Task<bool> AnyAsync(Expression<Func<T, bool>> predicate);
         Task<int> CountAsync(Expression<Func<T, bool>> predicate);
     }
