@@ -1,5 +1,5 @@
-﻿using Core.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using OnlineMenu.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess.UnitOfWorks.Concrete
+namespace OnlineMenu.Data.UnitOfWorks
 {
     public class UnitOfWork : IUnitOfWork
     {
@@ -21,7 +21,7 @@ namespace DataAccess.UnitOfWorks.Concrete
         private readonly ProductRepository _productRepository;
         private readonly CategoryRepository _categoryRepository;
 
-       public IProductRepository productRepository => _productRepository ??= new ProductRepository(_context);
+        public IProductRepository productRepository => _productRepository ??= new ProductRepository(_context);
 
         public ICategoryRepository categoryRepository => _categoryRepository ??= new CategoryRepository(_context);
 
