@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.DTOs
+namespace OnlineMenu.Core.DTOs
 {
-    public class CategoryDto
+    public class CategoryUpdateDto
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string? Image { get; set; }
     }

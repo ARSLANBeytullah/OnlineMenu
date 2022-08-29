@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.DTOs
+namespace OnlineMenu.Core.Entities
 {
-    public class ProductAddDto
+    public class Product
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
 
@@ -16,6 +17,8 @@ namespace Core.DTOs
         public string? Info { get; set; }
         public int UserId { get; set; }
         public int CategoryId { get; set; }
+
+        public Category? Category { get; set; }
+        public User? User { get; set; }
     }
-    
 }
