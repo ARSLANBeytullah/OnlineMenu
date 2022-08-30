@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OnlineMenuProject.Service\OnlineMenuProject.Service.csproj" />
+  </ItemGroup>
+
 </Project>
