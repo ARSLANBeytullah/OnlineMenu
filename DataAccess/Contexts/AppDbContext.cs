@@ -1,10 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OnlineMenu.Core.Entities;
+using OnlineMenu.Data.Configurations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace DataAccess.Contexts
 {
@@ -20,10 +22,10 @@ namespace DataAccess.Contexts
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            builder.ApplyConfiguration(new CategoryConfiguration());
-            builder.ApplyConfiguration(new ProductConfiguration());
-            builder.ApplyConfiguration(new UserConfiguration()); 
-            base.OnModelCreating(builder);//https://stackoverflow.com/questions/40703615/the-entity-type-identityuserloginstring-requires-a-primary-key-to-be-defined
+            modelBuilder.ApplyConfiguration(new CategoryConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductConfiguration());
+            modelBuilder.ApplyConfiguration(new UserConfiguration()); 
+            base.OnModelCreating(modelBuilder);//https://stackoverflow.com/questions/40703615/the-entity-type-identityuserloginstring-requires-a-primary-key-to-be-defined
         }
     }
 }

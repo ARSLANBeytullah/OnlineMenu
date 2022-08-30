@@ -1,18 +1,16 @@
-﻿using DataAccess.Abstract;
-using DataAccess.Contexts;
-using Microsoft.EntityFrameworkCore;
-using OnlineMenu.Core.Entities;
+﻿using OnlineMenuProject.Core.Entities;
+using OnlineMenuProject.Core.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnlineMenu.Data.Repositories
+namespace OnlineMenuProject.Data.Repository
 {
     public class ProductRepository : GenericRepository<Product>, IProductRepository
     {
-        public ProductRepository(AppDbContext context) : base(context)
+        public ProductRepository(OnlineMenuContext context) : base(context)
         {
         }
     }

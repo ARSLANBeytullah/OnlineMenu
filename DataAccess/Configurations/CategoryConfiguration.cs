@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OnlineMenu.Data.Configurations
 {
-    public class CategoryCongiguration : IEntityTypeConfiguration<Category>
+    public class CategoryConfiguration : IEntityTypeConfiguration<Category>
     {
         public void Configure(EntityTypeBuilder<Category> builder)
         {
