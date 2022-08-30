@@ -23,7 +23,6 @@ namespace OnlineMenuProject.Service.Mapping
             CreateMap<ProductAddDto, Product>();
             CreateMap<Product, ProductDto>();
             CreateMap<ProductUpdateDto, Product>();
-            
         }
     }
 }
