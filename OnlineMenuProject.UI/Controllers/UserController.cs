@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using OnlineMenuProject.Core.Entities;
+using OnlineMenuProject.UI.Models;
 
 namespace OnlineMenuProject.UI.Controllers
 {
