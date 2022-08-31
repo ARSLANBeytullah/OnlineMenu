@@ -8,6 +8,10 @@ namespace OnlineMenuProject.UI.IdentityCustomValidation
         {
             return new IdentityError() { Code = "InvalidUserName",Description = $"Bu {userName} geçersizdir." };
         }
+        public override IdentityError InvalidEmail(string email)
+        {
+            return new IdentityError() { Code = "InvalidEmail", Description = $"Bu {email} geçersizdir" };
+        }
         public override IdentityError DuplicateUserName(string userName)
         {
             return new IdentityError() { Code = "DuplicateUserName", Description = $"Bu {userName} zaten kullanılmaktadır" };
@@ -20,5 +24,12 @@ namespace OnlineMenuProject.UI.IdentityCustomValidation
         {
             return new IdentityError() { Code = "PasswordTooShort", Description = $"Şifreniz en az {length} karakter olmalıdır." };
         }
+
+
+
+
+
+
+      
     }
 }
