@@ -14,7 +14,7 @@ namespace OnlineMenuProject.UI.IdentityCustomValidation
             {
                 if (user.UserName[0].ToString() == item)
                 {
-                    errors.Add(new IdentityError() { Code = "UserNameContainsFirstLetterDigit", Description = "Kullanıcı adının ilk harfi sayısal karakter içeremez." });
+                    errors.Add(new IdentityError() { Code = "UserNameContainsFirstLetterDigit", Description = "Kullanıcı adının ilk harfi sayısal karakter içermemelidir" });
                 }
             }
             if (errors.Count == 0)
